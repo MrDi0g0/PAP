@@ -1,0 +1,309 @@
+@font-face
+{
+    font-family: Franklin-Italic;
+    src: url(Font/Franklin\ Gothic\ Heavy\ Italic.ttf);
+}
+
+@font-face
+{
+    font-family: Franklin-Normal;
+    src: url(Font/Franklin\ Gothic\ Heavy\ Regular.ttf);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Franklin-Normal;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: white;
+}
+
+body
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px ;
+    padding: 10px;
+}
+
+.img-header img
+{
+    width: 200px;
+}
+
+.menu
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.3);
+    left: 10%;
+    transform: translate(-10%);
+}
+
+.menu a
+{
+    padding: 50px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.menu a:hover
+{
+    color: rgb(192, 0, 0);
+}
+
+.menu .active
+{
+    color: rgb(192, 0, 0);
+}
+
+.user img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user:hover .menu-conta
+{
+    display: block;
+}
+
+.menu-conta
+{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px rgba(20, 20, 20, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.menu-conta li
+{
+    padding: 10px;
+    list-style: none;
+}
+
+.menu-conta a
+{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-conta a:hover 
+{
+    color: rgb(192, 0, 0);
+}
+
+main 
+{
+    padding: 5% 0 10% 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pos-vid
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.text-vid
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    color: white;
+}
+
+.text-vid h2 
+{
+    text-align: center;
+    padding: 5px;
+    padding: 10px;
+}
+
+.carousel 
+{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container 
+{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item 
+{
+    width: 100%;
+    height: 550px;	
+    flex: 0 0 auto;
+}
+
+.carousel iframe 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-btn
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.prev-btn 
+{
+    left: 0;
+}
+
+.next-btn 
+{
+    right: 0;
+}
+
+footer
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.gap
+{
+    padding-left: 250px;
+}
+
+footer .left img
+{
+    width: 200px;
+}
+
+footer .links-footer
+{
+    display: flex;
+}
+
+footer .center h3
+{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .center li
+{   
+    list-style: none;
+    padding: 10px;
+}
+
+footer .center a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+footer .center a:hover
+{
+    color: rgb(192, 0, 0);
+}
+
+footer .right h3
+{
+    padding-bottom: 10px;
+}
+
+footer .right li
+{   
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .right a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+footer .right i
+{
+    padding-right: 10px;
+}
+
+footer .right a:hover
+{
+    color: rgb(192, 0, 0);
+}

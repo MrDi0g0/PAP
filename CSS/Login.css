@@ -1,0 +1,148 @@
+@font-face
+{
+    font-family: Franklin-Italic;
+    src: url(Font/Franklin\ Gothic\ Heavy\ Italic.ttf);
+}
+
+@font-face
+{
+    font-family: Franklin-Normal;
+    src: url(Font/Franklin\ Gothic\ Heavy\ Regular.ttf);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Franklin-Normal;
+    box-sizing: border-box;
+}
+
+body
+{   
+
+    height: 100vh;
+    margin: 0;   
+}
+
+.pos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+}
+
+.login h1
+{
+    text-align: center;
+}
+
+.login .input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder
+{
+    color: white;
+}
+
+.input-box input:focus
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.input-box i
+{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login .btn
+{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+.login .btn:hover
+{
+    background-color: red;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.login .register-link
+{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0 15px;
+}
+
+.register-link p
+{
+    color: white;
+    text-decoration: none;
+}
+
+.register-link a
+{
+    color: red;
+    text-decoration: none;
+}
+
+.register-link p a:hover
+{
+    text-decoration: underline;
+}
+
+.login .voltar
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.login .voltar a
+{
+    padding: 10px 0 0;
+    font-size: 20px;
+    color: white;
+}

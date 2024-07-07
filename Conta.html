@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="CSS/Conta.css">
+    <link rel="shortcut icon" href="Img/Logo-img-white.png" type="image/x-icon">
+	<title>Entrobots</title>
+</head>
+<body style="background-image: url('Img/fundo.jpg');">
+
+    <div class="pos">
+        <div class="conta">
+            <form action="Conta.php" method="POST">
+                <h1>CRIAR CONTA</h1>
+                <div class="input-box">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="pass" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <button type="submit" name="submit" class="btn" id="button" onclick="validar()">Criar</button>
+
+                <div class="register-link">
+                    <p>Já tenho conta<span>&nbsp;</span><a href="Login.html" class="voltar">Voltar</a></p>
+                    <a href="Main.html"><i class="fa-regular fa-circle-xmark"></i></a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+<script src="https://kit.fontawesome.com/c97cbab7f2.js" crossorigin="anonymous"></script>
+<script src="JAVA/alerta-conta.js"></script>
+
+</body>
+</html>

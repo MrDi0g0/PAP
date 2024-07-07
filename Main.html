@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Main.css">
+    <link rel="shortcut icon" href="Img/Logo-img-white.png" type="image/x-icon">
+    <title>Entrobots</title>
+</head>
+<body style="background: url(Img/fundo.jpg)";>
+
+    <nav>
+        <img src="Img/Logo-Main-white.png" alt="">~
+        <div class="links">
+            <a href="#sobre">Sobre</a>
+            <a href="#participar">Como Participar</a>
+        </div>
+        <div class="pad"></div>
+        <div class="botoes-conta">
+            <a href="Login.html">LOGIN</a>
+            <a href="Conta.html">CRIAR CONTA</a>
+        </div>
+    </nav>
+
+    <main id="sobre">
+
+        <div class="main-info">
+            <h3>Projeto PAP</h3>
+            <div class="container-info">
+                <p>Bem-vindo ao emocionante mundo da robótica! Este projeto é o meu projeto PAP (Entrobots), propõe a realização de um empolgante campeonato de robótica, onde os protagonistas são os incríveis robôs seguidores de linha.
+                    <br>A essência deste desafio consinste na habilidade dos robôs em percorrer um trajeto determinado, seguindo uma linha demarcada na pista de fundo preto linha branca. O objetivo principal é simples, cruzar a linha de chegada no menor tempo possível, superando curvas e contracurvas e alguns cruzamentos, ultrapassando com menos penalizações possiveis.</p>
+                <br><span>Este é o meu robo</span>
+
+                
+                <div class="container-info-img">
+                    <img src="Img/robo.jpg" alt="">
+                </div>
+                    
+                <p>Éste é o sistema de cronometragem da pista</p>
+                <div class="container-info-img">
+                    <img src="Img/cronometro-1.jpg" alt="">
+                    <img src="Img/cronometro-2.jpg" alt="">
+                </div>
+
+                <p>Ésta é a pista da competição</p>
+                <div class="container-info-img">
+                    <img src="Img/pista.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="txt-card" id="participar">
+            <h2>Como Participar</h2>
+        </div>
+        <div class="fundo">
+            <div class="container-card">
+                <div class="card">
+                    <div class="content-card">
+                        <img src="Img/Robo-txt.jpg" alt="">
+                        <h3>Campeonato Robotica</h3>
+                        <p>
+                            Prepara-te para uma jornada emocionante no Campeonato de Robótica! Desafia as tuas habilidades, 
+                            explora a tua criatividade e faz parte de uma comunidade apaixonada pela tecnologia. Não deixes esta oportunidade passar. 
+                            Junta-te a nós e mostra a tua mente brilhante pode criar!</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content-card">
+                        <img src="Img/user-white-txt.png" alt="">
+                        <h3>Criar Conta</h3>
+                        <p>Para Participar na competição, cria uma conta para registar os teus tempos e ver o ranking de todos os participantes. 
+                            Acede a plataforma online e entra na corrida pela glória robótica 🏆!!</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content-card">
+                        <img src="Img/tag.png" alt="">
+                        <h3>Regista a tua TAG</h3>
+                        <p>Para garantir uma competição justa e precisa, cada robô participante deve estar equipado com uma TAG única. 
+                            Esta TAG será utilizada para registar os tempos de cada corrida, permitindo uma avaliação precisa do desempenho de cada robô. </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content-card">
+                        <img src="Img/Logo-Main-white-txt.png" alt="">
+                        <h3>Boa Sorte</h3>
+                        <p>Desejamos boa sorte a todos os participantes do Campeonato de Robótica! Que teu robô chegue a meta o mais rapido possivel, 
+                            que cada corrida seja uma fonte de orgulho e realização, que a competição seja justa e emocionante, 
+                            e que todos os participantes se divirtam enquanto demonstram o seu talento e dedicação. Que vença o melhor, e que todos saiam dessa experiência enriquecidos e inspirados para novos desafios. 
+                            Boa sorte a todos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="left">
+            <a href=""><img src="Img/Logo-Main-white.png" alt=""></a>
+        </div>
+        <div class="gap"></div>
+        <div class="links-footer">
+            <div class="center">
+                <h3>LINKS</h3>
+                <ul>
+                    <li><a href="Index.php">Home</a></li>
+                    <li><a href="Tempo.php">Tempos</a></li>
+                    <li><a href="Ranking.php">Ranking</a></li>
+                </ul>
+            </div>
+            <div class="gap"></div>
+            <div class="right">
+                <h3>REDES SOCIAIS</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCRDOECLtEchq9kcXP04EsKA"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c97cbab7f2.js" crossorigin="anonymous"></script>
+    <script src="java/vanilla-tilt.js"></script>
+    <script>
+        	VanillaTilt.init(document.querySelectorAll(".card"),{
+                max: 25,
+                speed: 400,
+            }
+            );
+    </script>
+</body>
+</html>

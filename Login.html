@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Login.css">
+    <link rel="shortcut icon" href="Img/Logo-img-white.png" type="image/x-icon">
+    <title>Entrobots</title>
+</head>
+<body style="background: url(Img/fundo.jpg);">
+    
+    <div class="pos">
+        <div class="login">
+            <form action="Login.php" method="POST">
+                <h1>LOGIN</h1>
+                
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="error"></div>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="pass" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="error"></div>
+                </div>
+    
+                <button type="submit" name="submit" class="btn" id="button" value="Enviar">Entrar</button>
+    
+                <div class="register-link">
+                    <p>Ainda não tens conta? <a href="Conta.html">Criar Conta</a></p>
+                </div>
+
+                <div class="voltar">
+                    <a href="Main.html"><i class="fa-regular fa-circle-xmark"></i></a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c97cbab7f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
